@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+void lcm(int a,int b)
+{
+	int n,temp1,temp2;
+	temp1=a;
+	temp2=b;
+	while(a!=b)
+		{
+			if(a<b)
+			{
+				a=a+temp1;
+			}
+			if(a>b)
+			{
+				b=b+temp2;
+			}
+		}
+	if(a==b);
+	{
+		cout<<"\n The LCM of "<<temp1<<" and "<<temp2<<"="<<a;
+	}
+}
+void main()
+{
+	int x,y;
+	cout<<"Enter two numbers to find their LCM";
+	cin>>x>>y;
+	lcm(x,y);
+}	
