@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+ int a[10000],j,x,i,search;
+ cout<<"Enter the number of values";
+ cin>>j;
+ cout<<"Enter the "<<j<<" values";
+ for(i=0;i<j;i++)
+  {
+  cin>>a[i];
+  }
+ cout<<"Enter the element to be searched";
+ cin>>search;
+ for(i=0;i<j;i++)
+  {
+  if(a[i]==search)
+  {
+   x=i+1;
+   cout<<"The value was found at position"<<x;
+  }
+  }
+  }
+ 
