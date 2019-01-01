@@ -1,0 +1,52 @@
+#include<iostream.h>
+#include<conio.h>
+struct cmp{
+	   float i;
+	   float r;
+	  }ob[3];
+void addition()
+{
+ob[2].r=ob[0].r+ob[1].r;
+ob[2].i=ob[0].i+ob[1].i;
+cout<<"\n The sum is= "<<ob[2].r<<"+"<<ob[2].i<<"i";
+}
+void subtraction()
+{
+ob[2].r=ob[0].r-ob[1].r;
+ob[2].i=ob[0].i-ob[1].i;
+cout<<"\n The difference is= "<<ob[2].r<<"+"<<ob[2].i<<"i";
+}
+void multiplication()
+{
+ob[2].r=ob[0].r*ob[1].r;
+ob[2].i=ob[0].i*ob[1].i;
+cout<<"\n The product is= "<<ob[2].r<<"+"<<ob[2].i<<"i";
+}
+void division()
+{
+ob[2].r=ob[0].r/ob[1].r;
+ob[2].i=ob[0].i/ob[1].i;
+cout<<"\n The quotient is= "<<ob[2].r<<"+"<<ob[2].i<<"i";
+}
+void main()
+{
+clrscr();
+int ch;
+cout<<"\n Enter the real part and the imaginary part of a complex no.1";
+cin>>ob[0].r>>ob[0].i;
+cout<<"\n Real and imaginary part of complex no.2";
+cin>>ob[1].r>>ob[1].i;
+cout<<"\n Enter choice \n 1.Add \n 2.Subtract \n 3.Multiply \n 4.Divide";
+cin>>ch;
+switch(ch)
+{
+case 1:addition();
+       break;
+case 2:subtraction();
+       break;
+case 3:multiplication();
+       break;
+case 4:division();
+       break;
+}
+}
