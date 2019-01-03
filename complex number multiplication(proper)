@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+struct{
+       int i;
+       int r;
+      }ob[3];
+void multiply()
+{
+ ob[2].r=(ob[0].r*ob[1].r)-(ob[0].i*ob[1].i);
+ ob[2].i=ob[1].r*ob[0].i+ob[1].i*ob[0].r;
+ cout<<"\n The product of the two complex numbers is="<<ob[2].r<<"+"<<ob[2].i<<"i";
+}
+void main()
+{
+clrscr();
+cout<<"\n Enter the r,i parts of complex number 1";
+cin>>ob[0].r>>ob[0].i;
+cout<<"\n Enter the r,i parts of complex number 2";
+cin>>ob[1].r>>ob[1].i;
+multiply();
+}
