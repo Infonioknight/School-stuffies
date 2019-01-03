@@ -1,0 +1,45 @@
+#include<iostream.h>
+#include<conio.h>
+void swapcol(int a[4][4])
+{
+int i,j,temp;
+for(i=0;i<4;i++)
+{
+ for(j=0;j<4;j++)
+ {
+  if(j==0)
+  {
+   temp=a[i][j];
+  }
+  if(j==3)
+  {
+   a[i][0]=a[i][j];
+   a[i][j]=temp;
+  }
+ }
+}
+cout<<"\n The new array is"<<endl;
+for(i=0;i<4;i++)
+{
+for(j=0;j<4;j++)
+{
+cout<<a[i][j]<<" ";
+}
+cout<<endl;
+}
+}
+void main()
+{
+clrscr();
+int b[4][4],i,j;
+cout<<"Enter array";
+for(i=0;i<4;i++)
+{
+for(j=0;j<4;j++)
+{
+cin>>b[i][j];
+}
+}
+swapcol(b);
+}
+
