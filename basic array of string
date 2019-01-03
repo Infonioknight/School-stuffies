@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int i;
+char a[5][20];
+cout<<"Enter the names of 5 cities";
+for(i=0;i<5;i++)
+{
+ cin>>a[i];
+}
+cout<<"\n The entered city names are"<<endl;
+for(i=0;i<5;i++)
+{
+ cout<<a[i]<<endl;
+}
+}
