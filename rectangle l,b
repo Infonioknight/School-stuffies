@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+struct rectangle{
+		 float length;
+		 float breadth;
+		 float perimeter;
+		 float area;
+		}ob;
+void main()
+{
+ clrscr();
+ cout<<"Enter the rectangle dimensions(length then breadth)";
+ cin>>ob.length>>ob.breadth;
+ ob.perimeter=2*ob.length+2*ob.breadth;
+ ob.area=ob.length*ob.breadth;
+ cout<<"\n The Perimeter= "<<ob.perimeter<<"\n The Area= "<<ob.area;
+}
