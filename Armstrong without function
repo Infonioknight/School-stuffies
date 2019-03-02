@@ -1,0 +1,22 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+ int sum=0,n,temp,d;
+ cout<<"Enter a number to check if armstrong number or not";
+ cin>>n;
+ temp=n;
+ while(n>0)
+ {
+  d=n%10;
+  sum+=d*d*d;
+  n=n/10;
+ }
+ if(sum==temp)
+ {
+  cout<<"Armstrong";
+ }
+ else
+ cout<<"No";
+ }
