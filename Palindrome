@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+void palin(int n)
+{
+ int d,r=0,copy;
+ copy=n;
+ while(n>0)
+ {
+  d=n%10;
+  r=r*10+d;
+  n=n/10;
+ }
+ if(copy==r)
+ cout<<"Palin";
+ else
+ cout<<"NO";
+ }
+ void main()
+ {
+  clrscr();
+  int a;
+  cout<<"Enter a number to check if palindrome or not";
+  cin>>a;
+  palin(a);
+ }
