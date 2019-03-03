@@ -1,4 +1,3 @@
-//special number is sum of factorial of digits is number
 #include<iostream.h>
 #include<conio.h>
 void main()
