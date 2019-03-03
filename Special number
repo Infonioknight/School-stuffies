@@ -1,0 +1,27 @@
+//special number is sum of factorial of digits is number
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+ int d,fact=1,sum=0,i,n;
+ cout<<"Enter number to check if special or not";
+ cin>>n;
+ i=n;
+ while(n>0)
+ {
+  d=n%10;
+  while(d>0)
+  {
+   fact*=d;
+   d--;
+  }
+  sum+=fact;
+  n=n/10;
+  fact=1;
+ }
+ if(sum==i)
+ cout<<"Yes";
+ else
+ cout<<"No";
+}
