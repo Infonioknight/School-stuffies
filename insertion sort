@@ -1,0 +1,35 @@
+#include<iostream.h>
+#include<conio.h>
+void intsort(int a[],int size)
+{
+ int i,j,temp;
+ for(i=0;i<size;i++)
+ {
+  for(j=i+1;j<size;j++)
+  {
+   if(a[i]>a[j])
+   {
+    temp=a[i];
+    a[i]=a[j];
+    a[j]=temp;
+   }
+  }
+ }
+ cout<<"\n The sorted array is ";
+ for(i=0;i<size;i++)
+ cout<<a[i]<<" ";
+}
+void main()
+{
+ clrscr();
+ int a[100],i,size;
+ cout<<"\n Enter the number of terms";
+ cin>>size;
+ cout<<"\n Enter the terms of the array";
+ for(i=0;i<size;i++)
+ {
+  cin>>a[i];
+ }
+ intsort(a,size);
+}
+
