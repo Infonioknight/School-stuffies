@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+ int a,b,check,x;
+ cout<<"Enter the two numbers to check";
+ cin>>a>>b;
+ if(a>b)
+ check=a;
+ if(a<b)
+ check=b;
+ for(int i=1;i<=check;i++)
+ {
+  if(a%i==0&&b%i==0)
+   {
+   x=i;
+   }
+ }
+ cout<<"\n The HCF is="<<x;
+ }
