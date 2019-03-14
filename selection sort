@@ -1,6 +1,6 @@
 #include<iostream.h>
 #include<conio.h>
-void intsort(int a[],int size)
+void selsort(int a[],int size)
 {
  int i,j,temp;
  for(i=0;i<size;i++)
@@ -30,6 +30,6 @@ void main()
  {
   cin>>a[i];
  }
- intsort(a,size);
+ selsort(a,size);
 }
 
